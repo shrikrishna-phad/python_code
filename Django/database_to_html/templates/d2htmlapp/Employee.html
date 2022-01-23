@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link rel="stylesheet" href="{%static 'css/table.css'%}">
+
+</head>
+<body>
+{% if emp_list %}
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Salary</th>
+    <th>City</th>
+    <th>Department</th>
+    <th>Date_of_Joining</th>
+    </thead>
+
+    {% for i in emp_list %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.salary}}</td>
+        <td>{{i.city}}</td>
+        <td>{{i.dept}}</td>
+        <td>{{i.doj}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% else %}
+<h1>No Records Found</h1>
+
+{% endif %}
+</body>
+</html>

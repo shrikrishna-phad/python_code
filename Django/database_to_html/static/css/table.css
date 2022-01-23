@@ -1,0 +1,18 @@
+body{
+background-color : Ivory;
+opacity : 1;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th{
+font-size: 25px;
+}
+
+td{
+font-size: 15px;
+text-align: center;
+}
