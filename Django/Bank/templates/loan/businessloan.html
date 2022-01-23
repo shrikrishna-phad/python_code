@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "home/base.html"%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+{%block base_block%}
+<link rel="stylesheet" href="{%static 'loan/loan.css'%}">
+<div class="loan_div2">
+    <form method="post">
+        <p><h6>First Name : {{Bform.first_name}}</h6></p>
+        <p><h6>Middle Name : {{Bform.middle_name}}</h6></p>
+        <p><h6>Last Name : {{Bform.last_name}}</h6></p>
+        <p><h6>Age : {{Bform.age}}</h6></p>
+        <p><h6>Current Address : {{Bform.address}}</h6></p>
+        <p><h6>Mobile Number : {{Bform.mobile_no}}</h6></p>
+        <p><h6>Loan Type - ({{Bform.loan_type.help_text}}): {{Bform.loan_type}}</h6></p>
+        <p><h6>Amount Requirement  : &#8377; {{Bform.loan_amount}}</h6></p>
+        <p><h6>Business type : {{Bform.type_business}}</h6></p>
+        <p><h6>City of Business : {{Bform.city_business}}</h6></p>
+        {%csrf_token%}
+        <input type="submit" class="btn btn_primary" name="Submit">
+    </form>
+</div>
+{%endblock%}
+</body>
+</html>

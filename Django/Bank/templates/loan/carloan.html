@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'home/base.html'%}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Loan</title>
+</head>
+<body>
+{%block base_block%}
+<link rel="stylesheet" href="{%static 'loan/loan.css'%}">
+<div class="loan_div2">
+    <form method="post">
+        <p><h6>First Name : {{Cform.first_name}}</h6></p>
+        <p><h6>Middle Name : {{Cform.middle_name}}</h6></p>
+        <p><h6>Last Name : {{Cform.last_name}}</h6></p>
+        <p><h6>Age : {{Cform.age}}</h6></p>
+        <p><h6>Current Address : {{Cform.address}}</h6></p>
+        <p><h6>Mobile Number : {{Cform.mobile_no}}</h6></p>
+        <p><h6>Loan Type - ({{Cform.loan_type.help_text}}): {{Cform.loan_type}}</h6></p>
+        <p><h6>Amount Requirement  : &#8377; {{Cform.loan_amount}}</h6></p>
+        <p><h6>Brand of Car : {{Cform.car_brand}}</h6></p>
+        <p><h6>Model of Car : {{Cform.car_model}}</h6></p>
+        <p><h6>Condition of Car - ({{Cform.condition.help_text}}): {{Cform.condition}}</h6></p>
+        {%csrf_token%}
+        <input type="submit" class="btn btn_primary" name="Submit">
+    </form>
+</div>
+{%endblock%}
+</body>
+</html>
