@@ -1,0 +1,20 @@
+
+body{
+background-color: AliceBlue;
+}
+
+div.loan_div1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    color: navy;
+}
+
+div.loan_div2{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    color: navy;
+}

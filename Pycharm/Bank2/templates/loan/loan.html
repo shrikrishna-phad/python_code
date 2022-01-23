@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends "home/base.html"%}
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan</title>
+</head>
+<body>
+{%block base_block%}
+<link rel="stylesheet" href="{%static 'loan/loan.css'%}">
+<div class="loan_div1">
+    <a href="/loan/homeloan/"><h2>Home Loan</h2></a>
+    <a href="#"><h2>Car Loan</h2></a>
+    <a href="#"><h2>Business Loan</h2></a>
+</div>
+{%endblock%}
+</body>
+</html>

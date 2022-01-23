@@ -1,0 +1,13 @@
+
+body{
+background-color: AliceBlue;
+}
+
+div.home_div1{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    color: navy;
+}
