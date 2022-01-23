@@ -1,0 +1,10 @@
+CRITICAL : this is critical massage : 05:102021 07:04:21
+ERROR : this is error massage : 05:102021 07:04:21
+WARNING : this is warning massage : 05:102021 07:04:21
+INFO : this is info10 massage : 05:102021 07:04:21
+DEBUG : this is debug massage : 05:102021 07:04:21
+CRITICAL: test.py : gigging : 06/10/2021 02:54:09
+INFO : test.py : customer with name ('1', '2', '3') has successfully created new account with number 41821 : 06/10/2021 05:47:15
+CRITICAL : root : This is the Critical : 07/10/2021 09:43:40
+ERROR : root : This is the Error : 07/10/2021 09:43:40
+WARNING : root : This is the Warning : 07/10/2021 09:43:40
