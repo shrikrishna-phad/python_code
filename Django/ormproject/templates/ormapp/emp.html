@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+  <style>
+    .a{
+    float: left;
+    margin: 2px;
+    background-color: OldLace;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Form -->
+<div class="a" align="left">
+  <h4 align="center">StudentModel.objects.all()</h4>
+  {%if form%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form1 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(Col_name__gt=104)</h4>
+  {%if form1%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form1%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form2 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_id__gte=104)</h4>
+  {%if form2%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form2%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form3 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_id__lt=104)</h4>
+  {%if form3%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form3%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form4 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_id__lte=104)</h4>
+  {%if form4%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form4%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form5 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_id__in=(104,106,101))</h4>
+  {%if form5%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form5%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form6 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__exact='radhika')</h4>
+  {%if form6%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form6%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+
+<!-- Form7 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__iexact='radhika')</h4>
+  {%if form7%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form7%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form8 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__contains='ra')</h4>
+  {%if form8%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form8%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form9 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__icontains='ra')</h4>
+  {%if form9%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form9%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form10 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__startswith='r')</h4>
+  {%if form10%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form10%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form11 -->
+<div class="a">
+  <h4 align="center">StudentModel.objects.filter(stu_name__istartswith='r')</h4>
+  {%if form11%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form11%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form12 -->
+<div class="a">
+  <h4 align="center">Combining two Queries</h4>
+    <h4 align="center">METHOD-1</h4>
+  <h4 align="center">q1 = StudentModel.objects.filter(stu_name__istartswith='r')</h4>
+  <h4 align="center">q2 = StudentModel.objects.filter(stu_gender__iexact='m')</h4>
+  <h4 align="center">form12 = q1 | q2  # or</h4>
+  {%if form12%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form12%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form13 -->
+<div class="a">
+    <h4 align="center">Combining two Queries</h4>
+    <h4 align="center">METHOD-1</h4>
+  <h4 align="center">q1 = StudentModel.objects.filter(stu_name__istartswith='r')</h4>
+  <h4 align="center">q2 = StudentModel.objects.filter(stu_gender__iexact='m')</h4>
+  <h4 align="center">form13 = q1 & q2  # and</h4>
+  {%if form13%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form13%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form14 -->
+<div class="a">
+    <h4 align="center">Combining two Queries</h4>
+    <h4 align="center">METHOD-2</h4>
+  <h4 align="center">form15 = StudentModel.objects.filter( <br>Q(stu_name__istartswith='r')<br> | <br>Q(stu_gender__iexact='m'))</h4>
+  {%if form14%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form14%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<!-- Form15 -->
+<div class="a">
+    <h4 align="center">Combining two Queries</h4>
+    <h4 align="center">METHOD-2</h4>
+  <h4 align="center">from django.db.models import Q</h4>
+  <h4 align="center">form15 = StudentModel.objects.filter(<br>Q(stu_name__istartswith='r')<br> & <br>Q(stu_gender__iexact='m'))</h4>
+  {%if form15%}
+  <table border="2">
+    <thead>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>GENDER</th>
+    <th>STREAM</th>
+    <th>AVG MARKS</th>
+    </thead>
+    {%for i in form15%}
+    <tr>
+      <td>{{i.stu_id}}</td>
+      <td>{{i.stu_name}}</td>
+      <td>{{i.stu_gender}}</td>
+      <td>{{i.stu_stream}}</td>
+      <td>{{i.stu_avgmarks}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+  {%else%}
+  <h3> NO DATA </h3>
+  {%endif%}
+</div>
+
+<div class="a">
+  <h3>Aggregate Operations :: Average</h3>
+  <h4>form16 = StudentModel.objects.all().aggregate(Avg('stu_avgmarks'))</h4>
+  <h4>{{form16}}</h4>
+</div>
+
+<div class="a">
+  <h3>Aggregate Operations :: Sum</h3>
+  <h4>form17 = StudentModel.objects.all().aggregate(Sum('stu_avgmarks'))</h4>
+  <h4>{{form17}}</h4>
+</div>
+
+<div class="a">
+  <h3>Aggregate Operations :: Min</h3>
+  <h4>form18 = StudentModel.objects.all().aggregate(Min('stu_avgmarks'))</h4>
+  <h4>{{form18}}</h4>
+</div>
+
+<div class="a">
+  <h3>Aggregate Operations :: Max</h3>
+  <h4>form19 = StudentModel.objects.all().aggregate(Max('stu_avgmarks'))</h4>
+  <h4>{{form19}}</h4>
+</div>
+
+<div class="a">
+  <h3>Aggregate Operations :: Count</h3>
+  <h4>form20 = StudentModel.objects.all().aggregate(Sum('stu_avgmarks'))</h4>
+  <h4>{{form20}}</h4>
+</div>
+
+
+</body>
+</html>

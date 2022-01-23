@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+<div class="container" align="center">
+    <h1>Student Form</h1>
+    <hr>
+    <form method="post">
+        <p><h3>ID {{form.stu_id}}</h3></p>
+        <p><h3>Name {{form.stu_name}}</h3></p>
+        <p><h3>Gender {{form.stu_gender}}</h3></p>
+        <p><h3>Stream {{form.stu_stream}}</h3></p>
+        <p><h3>Average Marks {{form.stu_avgmarks}}</h3></p>
+        {% csrf_token %}
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
