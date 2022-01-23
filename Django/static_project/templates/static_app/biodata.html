@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BioData</title>
+    <link rel="stylesheet" href="{%static 'static_app/css/static.css'%}">
+</head>
+<body>
+<img class="my_photo" src="{%static 'static_app/images/my_photo.jpg'%}" alt="my_photo">
+<h2>Full Name:: {{firstname}} {{middlename}} {{lastname}}</h2>
+<h3>Gender:: {{Additional_Details.gender}}</h3>
+<h3>Date of Birth:: {{Additional_Details.dob}}</h3>
+<h3>Age:: {{Additional_Details.age.int}} {{Additional_Details.age.unit}}</h3>
+<h3>Height:: {{Additional_Details.height}}</h3>
+<h3>Education:: {{Additional_Details.education}}</h3>
+<h3>Current City:: {{Additional_Details.city}}</h3>
+
+<a class="fb" href="https://www.facebook.com/shrikrishna.phad" target="_blank"><h4>Facebook</h4></a>
+<a class="insta" href="https://www.instagram.com/the.shrikrishna/" target="_blank"><h4>Instagram</h4></a>
+<a class="email" href="mailto:shrikrishna.phad@gmail.com"><h4>Email</h4></a>
+</body>
+</html>

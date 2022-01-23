@@ -1,0 +1,32 @@
+body{
+background-color : lightblue;
+opacity : 1;
+}
+img.my_photo{
+    border : 5px solid gray;
+    width : 200px;
+    height : 200px;
+    float : right;
+    margin-top : 10px;
+    margin-right : 10px
+}
+
+h2{
+color : #800080;
+font-size : 50px
+}
+
+a.fb{
+float : left;
+margin-right : 10px
+}
+
+a.insta{
+float : left;
+margin-right : 10px
+}
+
+a.email{
+float : left;
+
+}
