@@ -1,0 +1,20 @@
+INFO : New_Registration.py : A customer with ['amit', 'karbsayya', 'swami'] has opened account with account number 50959 and balance 100000 : 15/10/2021 08:37:33
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 16/10/2021 06:42:39
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 16/10/2021 06:43:09
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 16/10/2021 06:45:54
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 16/10/2021 07:00:18
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 16/10/2021 10:14:59
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 02:22:57
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 02:24:35
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 02:27:45
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 03:08:10
+INFO : Deposite_class.py : Customer with account number 24824 has deposited Rs.250000 to the account
+ new balance-250000 : 17/10/2021 03:08:22
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 05:00:44
+INFO : PasswordChange_class.py : Customer with account number 24824 has changed password. : 17/10/2021 05:01:08
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 05:01:57
+INFO : PasswordChange_class.py : Customer with account number 24824 has changed password. : 17/10/2021 05:03:13
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 05:05:05
+INFO : Login_class.py : Customer with account number 24824 has logged in successfully : 17/10/2021 05:07:28
+INFO : New_Registration.py : A customer ['gunashantosh', 'dattatraya', 'phad'] has opened account
+ with account number 12554 and balance 500 : 01/11/2021 02:09:53
