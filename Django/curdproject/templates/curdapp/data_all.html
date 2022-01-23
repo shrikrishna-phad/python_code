@@ -1,0 +1,32 @@
+{%extends 'curdapp/base.html'%}
+{%block base_block%}
+<div>
+    <h1 align="center">Employee Data</h1>
+    <hr>
+    <table align="center">
+        <thead>
+            <th>id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>Date</th>
+            <th>DateTime</th>
+            <th>Action</th>
+        </thead>
+    {%for i in employee%}
+        <tr>
+            <td><b>{{i.Employee_id}}</b></td>
+            <td><b>{{i.Employee_Name}}</b></td>
+            <td><b>{{i.Employee_Salary}}</b></td>
+            <td><b>{{i.Employee_Address}}</b></td>
+            <td><b>{{i.Date}}</b></td>
+            <td><b>{{i.Date_Time}}</b></td>
+            <td><b><a href="update/{{i.id}}">Update</a> <a href="delete/{{i.id}}">Delete</a></b></td>
+
+        </tr>
+    {%endfor%}
+    </table>
+    <br><br>
+    <p align="center"><a href="create/" class="btn btn-primary btn-lg">Insert New Employee</a></p>
+</div>
+{%endblock%}

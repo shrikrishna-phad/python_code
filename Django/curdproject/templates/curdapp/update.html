@@ -1,0 +1,20 @@
+{%extends 'curdapp/base.html'%}
+{%block base_block%}
+<div align="center">
+<h1>Update Record Here </h1>
+<hr>
+<form method="post">
+    {%csrf_token%}
+    id : <input type="text" name="Employee_id" value="{{employee.Employee_id}}">
+    <p></p>
+    Name : <input type="text" name="Employee_Name" value={{employee.Employee_Name}}">
+    <p></p>
+    Salary : <input type="text" name="Employee_Salary" value="{{employee.Employee_Salary}}">
+    <p></p>
+    Address : <input type="text" name="Employee_Address" value="{{employee.Employee_Address}}">
+    <p></p>
+    <input type="submit" class="btn btn-primary btn-lg" value="Update Record">
+</form>
+
+</div>
+{%endblock%}
