@@ -1,0 +1,27 @@
+git status
+##########################
+
+for adding single file
+git add filename
+
+######################################
+
+git add filename1 filename2 filenamen
+
+All files
+git add .  
+##################################3
+
+git commit -m "message"
+#######################################
+
+git pull 
+
+###################################
+
+git push origin head(branch)
+
+
+
+git config --global user.email "emailaddress@yahoo.com"
+git config --global user.name "username"
