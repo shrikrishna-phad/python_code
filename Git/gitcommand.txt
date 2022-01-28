@@ -1,18 +1,13 @@
-git status
-##########################
+git add file_name	# for adding single file
 
-for adding single file
-git add filename
+git add filename1 filename2 filenamen	# for adding multiple files
 
-######################################
+git add .	# To add All files
 
-git add filename1 filename2 filenamen
-
-All files
-git add .  
-##################################3
+##################################
 
 git commit -m "message"
+
 #######################################
 
 git pull 
